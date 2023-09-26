@@ -3,8 +3,8 @@ public class TDEEcalculate {
 
     public static String calculateTDEE(double bmr, double r, double dailyCalories) {
         String res = "";
-        if (bmr < 0.0 || r < 1.2 || r > 1.9 || dailyCalories <= 0.0) {
-            res = "Invalid input";
+        if (bmr < 0.0 || r < 1.2 || r > 1.9 || dailyCalories <= 0.0){
+            return "Invalid input";
         }
         double tdee = bmr * r;
         tdee = (double) Math.round(tdee * 10) / 10;
